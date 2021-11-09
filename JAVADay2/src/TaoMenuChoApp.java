@@ -10,9 +10,9 @@ public class TaoMenuChoApp {
         System.out.println("3. Vẽ Hình Chữ Nhật");
         System.out.println("0. Exit");
         System.out.println("Enter Your Choice");
-        while (true){
+        while (true) {
             int choice = number.nextInt();
-            switch (choice){
+            switch (choice) {
                 case 1:
                     System.out.println("Vẽ Hình Tam Giác ");
                     System.out.println("* * * * *");

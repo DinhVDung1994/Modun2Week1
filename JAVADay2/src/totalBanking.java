@@ -15,9 +15,9 @@ public class totalBanking {
         rate = input.nextDouble();
 
         double totalRate = 0;
-        for ( int i =0; i<month;i++){
-            totalRate += money * (rate/100)/12*month;
+        for (int i = 0; i < month; i++) {
+            totalRate += money * (rate / 100) / 12 * month;
         }
-        System.out.println("Lãi Xuất: "+totalRate);
+        System.out.println("Lãi Xuất: " + totalRate);
     }
 }
