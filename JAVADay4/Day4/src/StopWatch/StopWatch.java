@@ -3,10 +3,10 @@ package StopWatch;
 import java.util.Date;
 import java.util.Scanner;
 
-public class stopWatch {
+public class StopWatch {
     long startTime;
     long endTime;
-    public stopWatch() {
+    public StopWatch() {
     }
     public long Start(){
         startTime = new Date().getTime();

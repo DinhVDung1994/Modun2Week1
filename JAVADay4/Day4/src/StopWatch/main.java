@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class main {
         public static void main(String[] args) {
-            stopWatch st = new stopWatch();
+            StopWatch st = new StopWatch();
             Scanner sc = new Scanner(System.in);
             st.Start();
             for (int i = 0; i < 1000000000; i++) {
