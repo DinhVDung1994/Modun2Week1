@@ -1,13 +1,11 @@
-package ClassPoint2DandClassPoint3D;
+package ClassPointAndMoveablePoint;
 
-import java.util.Arrays;
-
-public class Point2D {
-    private float x ;
+public class Point {
+    private float x;
     private float y;
 
-    public Point2D(){}
-    public Point2D(float x, float y){
+    public Point(){}
+    public Point(float x, float y){
         this.x = x;
         this.y = y;
     }
@@ -27,17 +25,19 @@ public class Point2D {
     public void setY(float y) {
         this.y = y;
     }
-    public float[] getXY(){
-        float[] arr = {this.x,this.y};
-        return arr;
-    }
     public void setXY(float x, float y){
-        this.x = x;
+        this.x =x;
         this.y = y;
     }
+//    public float getXY(){
+//        return
+//    }
 
     @Override
     public String toString() {
-        return Arrays.toString(getXY());
+        return "Point{" +
+                "x=" + x +
+                ", y=" + y +
+                '}';
     }
 }

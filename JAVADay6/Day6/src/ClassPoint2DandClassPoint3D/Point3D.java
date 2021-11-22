@@ -1,5 +1,7 @@
 package ClassPoint2DandClassPoint3D;
 
+import java.util.Arrays;
+
 public class Point3D extends Point2D{
     private float z;
 
@@ -18,11 +20,22 @@ public class Point3D extends Point2D{
     public void setZ(float z) {
         this.z = z;
     }
+    public void setXYZ(float x, float y, float z) {
+        setXY(x,y);
+        this.z = z;
+    }
+    public float[] getXYZ() {
+        float[]  array = new float[3];
+        array[0] = this.getX();
+        array[1] = this.getY();
+        array[2] = this.z;
+        return array;
+    }
 
     @Override
     public String toString() {
         return "Point3D: "
-                +"("+getX()+" ,"+getY()+" ,"+getZ()+")";
+                +Arrays.toString(getXYZ());
     }
     public static class Point3DTest{
         public static void main(String[] args) {
