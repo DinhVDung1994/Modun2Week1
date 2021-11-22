@@ -19,24 +19,67 @@ public class MoveablePoint extends Point{
         this.ySpeed = ySpeed;
     }
 
-    public float getxSpeed() {
+    public float getXSpeed() {
         return xSpeed;
     }
 
-    public void setxSpeed(float xSpeed) {
+    public void setXSpeed(float xSpeed) {
         this.xSpeed = xSpeed;
     }
 
-    public float getySpeed() {
+    public float getYSpeed() {
         return ySpeed;
     }
 
-    public void setySpeed(float ySpeed) {
+    public void setYSpeed(float ySpeed) {
         this.ySpeed = ySpeed;
     }
-//
-//    @Override
-//    public String toString() {
-//        return ""
-//    }
+
+    public void setSpeed(float xSpeed,float ySpeed){
+        this.xSpeed = xSpeed;
+        this.ySpeed = ySpeed;
+    }
+    public float[] getSpeed(){
+        float[] array ={this.xSpeed,this.ySpeed};
+        return array;
+    }
+
+    @Override
+    public String toString() {
+        return "MoveablePoint{" +
+                "xSpeed=" + xSpeed +
+                ", ySpeed=" + ySpeed +
+                '}';
+    }
+
+    @Override
+    public void setX(float x) {
+        super.setX(x);
+    }
+
+    @Override
+    public float getX() {
+        return super.getX();
+    }
+
+    @Override
+    public float getY() {
+        return super.getY();
+    }
+
+    @Override
+    public void setY(float y) {
+        super.setY(y);
+    }
+    public MoveablePoint move(MoveablePoint movablePoint) {
+        movablePoint.setX(movablePoint.getX() + xSpeed);
+        movablePoint.setY(movablePoint.getY() + ySpeed);
+        return this;
+    }
+
+    public static void main(String[] args) {
+        MoveablePoint moveablePoint;
+        moveablePoint = new MoveablePoint(80,50);
+        System.out.println(moveablePoint.move(moveablePoint));
+    }
 }

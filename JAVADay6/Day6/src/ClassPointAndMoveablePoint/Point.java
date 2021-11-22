@@ -1,5 +1,7 @@
 package ClassPointAndMoveablePoint;
 
+import java.util.Arrays;
+
 public class Point {
     private float x;
     private float y;
@@ -29,15 +31,13 @@ public class Point {
         this.x =x;
         this.y = y;
     }
-//    public float getXY(){
-//        return
-//    }
+    public float[] getXY(){
+        float arr[] = {this.x,this.y};
+        return arr;
+    }
 
     @Override
     public String toString() {
-        return "Point{" +
-                "x=" + x +
-                ", y=" + y +
-                '}';
+        return Arrays.toString(getXY());
     }
 }
