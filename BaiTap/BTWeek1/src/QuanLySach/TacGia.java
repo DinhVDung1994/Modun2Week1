@@ -24,4 +24,10 @@ public class TacGia{
     public void setNgaySinh(Ngay ngaySinh) {
         this.ngaySinh = ngaySinh;
     }
+
+    @Override
+    public String toString() {
+        return tenTacGia +
+                ", ngaySinh=" + ngaySinh ;
+    }
 }

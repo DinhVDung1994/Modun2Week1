@@ -60,4 +60,13 @@ public class QuyenSach {
     public double GiaSauKhiGiamGia(double x){
         return this.giaBan*(1-x/100);
     }
+
+    @Override
+    public String toString() {
+        return "QuyenSach{" + tenSach  +
+                ", giaBan=" + giaBan +
+                ", namSanXuat=" + namSanXuat +
+                ", tacGia=" + getTacGia() +
+                '}';
+    }
 }
