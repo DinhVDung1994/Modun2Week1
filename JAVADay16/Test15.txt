@@ -1,3 +1,0 @@
-[Hello Java!, Good Bye!, Tom Đú]
-[Hello Java!, Good Bye!, Tom Đú]
-[Hello Java!, Good Bye!, Tom Đú]
